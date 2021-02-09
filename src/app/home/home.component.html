@@ -1,0 +1,37 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <lbd-chart
+                  [title]="'Google Maps'"
+                  [subtitle]="'optimiza tus repartos y economiza gastos de distribucion teniendo una vista general  de la ubicacion de tus clientes . Te damos las Herramientas para optimizar el tiempo de entrega.'"
+                  [chartClass]="'ct-perfect-fourth'"
+                  [chartType]="emailChartType"
+                  [chartData]="emailChartData"
+                  [legendItems]="emailChartLegendItems"
+                  [withHr]="true"
+                  [footerIconClass]="'fa fa-clock-o'"
+                  [footerText]="'Campaign sent 2 days ago'">
+                </lbd-chart>
+                
+            </div>
+       
+            <div class="col-md-8">
+                <lbd-chart
+                  [title]="'Lista de clientes'"
+                  [subtitle]="'Registrar tus clientes nunca habia sido tan sensillo. Disfruta de la aplicacion con contenido creativo. Ten a mano tu listado de clientes'"
+                  [chartType]="hoursChartType"
+                  [chartData]="hoursChartData"
+                  [chartOptions]="hoursChartOptions"
+                  [chartResponsive]="hoursChartResponsive"
+                  [legendItems]="hoursChartLegendItems"
+                  [withHr]="true"
+                  [footerIconClass]="'fa fa-history'"
+                  [footerText]="'Updated 3 minutes ago'">
+                </lbd-chart>
+            </div>
+         
+        </div>
+        
+    </div>
+</div>
